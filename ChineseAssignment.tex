@@ -1,0 +1,72 @@
+\documentclass[a4paper,UTF8]{ctexart}%Chinese
+    \author{电41班~刘昊天~2014010942}
+    \title{题目}
+\usepackage{fontspec}%font
+\usepackage{amsmath}%math
+\usepackage{amscd}%draw
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{url}
+%\usepackage{float}
+\usepackage[separate-uncertainty,list-separator={, },list-final-separator={, },list-pair-separator={, },range-phrase={\ensuremath{\sim}}]{siunitx}
+\usepackage[all]{xy}%draw
+\usepackage{tikz}%draw
+\usepackage{booktabs}
+\usepackage{graphicx}%insert a pic
+\usepackage{subcaption}
+\expandafter\def\csname ver@subfig.sty\endcsname{}
+\usepackage{multicol}
+\usepackage{caption}
+    \captionsetup{format=plain,labelsep=period}
+\usepackage{listings}%code
+    \definecolor{mygreen}{rgb}{0,0.6,0}
+    \definecolor{mygray}{rgb}{0.5,0.5,0.5}
+    \definecolor{mymauve}{rgb}{0.58,0,0.82}
+    \lstset{ %
+    %   extendedchars=false,%这一条命令可以解决代码跨页时,章节标题,页眉等汉字不显示的问题
+        backgroundcolor=\color{white},   % choose the background color
+        basicstyle=\footnotesize\ttfamily,        % size of fonts used for the code
+        columns=fullflexible,
+        breaklines=true,                 % automatic line breaking only at whitespace
+        captionpos=b,% sets the caption-position to bottom
+        tabsize=4,
+        commentstyle=\color{mygreen},    % comment style
+        escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+        keywordstyle=\color{blue},       % keyword style
+        stringstyle=\color{mymauve}\ttfamily,     % string literal style
+        frame=single,
+        rulesepcolor=\color{red!20!green!20!blue!20},
+        % identifierstyle=\color{red},
+        language=matlab
+    }
+\usepackage{multirow}%table multirow
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}%paper
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{cleveref}
+    \crefname{table}{表}{表}
+    \Crefname{table}{表}{表}
+    \crefname{figure}{图}{图}
+    \Crefname{figure}{图}{图}
+    \crefname{section}{节}{节}
+    \Crefname{section}{节}{节}
+    \crefname{equation}{式}{式}
+    \Crefname{equation}{式}{式}
+    \newcommand{\crefrangeconjunction}{至}
+    \newcommand\crefrangepreconjunction{}
+    \newcommand\crefrangepostconjunction{}
+    \newcommand{\crefpairconjunction}{和}
+    \newcommand{\crefmiddleconjunction}{,}
+    \newcommand{\creflastconjunction}{和}
+    \newcommand{\crefpairgroupconjunction}{和}
+    \newcommand{\crefmiddlegroupconjunction}{,}
+    \newcommand{\creflastgroupconjunction}{和}
+\begin{document}
+    \maketitle
+
+
+
+    \newpage
+    \bibliography{homework}
+    \bibliographystyle{unsrt}
+\end{document}

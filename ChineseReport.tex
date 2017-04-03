@@ -1,0 +1,105 @@
+\documentclass[a4paper,UTF8]{ctexart}%Chinese
+\newcommand{\mytitle}{题目}
+    \author{电41班~刘昊天~2014010942}
+    \title{\mytitle}
+    \renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
+\usepackage{fontspec}%font
+\usepackage{amsmath}%math
+\usepackage{amscd}%draw
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{url}
+\usepackage{float}
+\usepackage[separate-uncertainty,list-separator={, },list-final-separator={, },list-pair-separator={, },range-phrase={\ensuremath{\sim}}]{siunitx}
+\usepackage[all]{xy}%draw
+\usepackage{tikz}%draw
+\usepackage{booktabs}
+\usepackage{graphicx}%insert a pic
+\usepackage{subcaption}
+\expandafter\def\csname ver@subfig.sty\endcsname{}
+\usepackage{multicol}
+\usepackage{caption}
+    \captionsetup{format=plain,labelsep=period}
+\usepackage{ulem}
+\usepackage{listings}%code
+    \definecolor{mygreen}{rgb}{0,0.6,0}
+    \definecolor{mygray}{rgb}{0.5,0.5,0.5}
+    \definecolor{mymauve}{rgb}{0.58,0,0.82}
+    \lstset{ %
+    %   extendedchars=false,%这一条命令可以解决代码跨页时,章节标题,页眉等汉字不显示的问题
+        backgroundcolor=\color{white},   % choose the background color
+        basicstyle=\footnotesize\ttfamily,        % size of fonts used for the code
+        columns=fullflexible,
+        breaklines=true,                 % automatic line breaking only at whitespace
+        captionpos=b,% sets the caption-position to bottom
+        tabsize=4,
+        commentstyle=\color{mygreen},    % comment style
+        escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+        keywordstyle=\color{blue},       % keyword style
+        stringstyle=\color{mymauve}\ttfamily,     % string literal style
+        frame=single,
+        rulesepcolor=\color{red!20!green!20!blue!20},
+        % identifierstyle=\color{red},
+        language=matlab
+    }
+\usepackage{multirow}%table multirow
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}%paper
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{cleveref}
+    \crefname{table}{表}{表}
+    \Crefname{table}{表}{表}
+    \crefname{figure}{图}{图}
+    \Crefname{figure}{图}{图}
+    \crefname{section}{节}{节}
+    \Crefname{section}{节}{节}
+    \crefname{equation}{式}{式}
+    \Crefname{equation}{式}{式}
+    \newcommand{\crefrangeconjunction}{至}
+    \newcommand\crefrangepreconjunction{}
+    \newcommand\crefrangepostconjunction{}
+    \newcommand{\crefpairconjunction}{和}
+    \newcommand{\crefmiddleconjunction}{,}
+    \newcommand{\creflastconjunction}{和}
+    \newcommand{\crefpairgroupconjunction}{和}
+    \newcommand{\crefmiddlegroupconjunction}{,}
+    \newcommand{\creflastgroupconjunction}{和}
+\begin{document}
+    \begin{titlepage}
+        \begin{flushleft}
+            \large \kaishu \mytitle
+        \end{flushleft} 
+        \begin{center}  
+            \kaishu     
+            \vfill \Huge
+            吉林省水资源利用情况调研及建议\\
+            %\Large ——2016年毛泽东思想和中国特色社会主义理论体系概论课程调研\\
+            \vfill
+            \renewcommand{\ULthickness}{0.1pt}
+            \ULdepth=3pt  \LARGE
+            \makebox[38mm][s]{提交人姓名} \uline{\hfill 刘昊天 \hfill}\footnote{具体分工见附录\ref{sec:Distribute}。}
+            \vspace{1mm}
+            \\ \makebox[38mm][s]{提交人信息}\uline{\hfill 2014010942，电41班 \hfill}
+            \vspace{1mm}
+            \\ \makebox[38mm][s]{其他成员姓名} \uline{\hfill 赵宝旭、杨昊霖、时光 \hfill}
+            \vspace{1mm}
+            \\ \makebox[38mm][s]{开展地区}\uline{\hfill 吉林省 \hfill}
+            \vspace{1mm}
+            \\ \makebox[38mm][s]{调研时间}\uline{\hfill 2016 年 2 月 \hfill}
+        \end{center}
+    \end{titlepage}
+    \thispagestyle{empty}
+    \tableofcontents
+    \newpage
+    \pagestyle{headings}
+    \setcounter{page}{1}
+    \maketitle
+    \begin{abstract}
+        吉林省属于水资源相对短缺的地区。本调研通过宏观数据统计与微观个体访谈，立体地展现了吉林省水资源的利用情况。本调研从农业、工业、生活三个方面出发，分析了吉林省水资源利用的途径，进而发现其中的经验与问题。文末，本调研从多方面给出了对吉林省水资源利用的建言。
+        \\[1\baselineskip] \textbf{关键字：}吉林省，水资源，节水建言
+    \end{abstract}
+
+    \newpage
+    \bibliography{report}
+    \bibliographystyle{unsrt}
+\end{document}
