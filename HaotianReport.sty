@@ -4,8 +4,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{HaotianReport}[2017/02/11]
-\typeout{Normal Report Version 1.0}
+\ProvidesPackage{HaotianReport}[2017/04/05]
+\typeout{Normal Report Version 1.1}
 % packages
 \RequirePackage{ctex}
 \RequirePackage{xcolor}          % color image and color definition
@@ -22,6 +22,7 @@
 \RequirePackage{amsmath,bm}              % AMSLaTeX
 \RequirePackage{amssymb,mathrsfs}        % AMSLaTeX sym-bols
 \RequirePackage{latexsym}
+\RequirePackage{siunitx}
 
 \RequirePackage{longtable,multirow,hhline,tabularx,array} % Table
 \RequirePackage{flafter}
@@ -75,6 +76,9 @@
             urlcolor=black]{hyperref}
 \fi
 \usepackage{cleveref}
+
+\sisetup{per-mode=symbol,bracket-unit-denominator=false,qualifier-mode=text,list-separator={, },list-final-separator={, },list-pair-separator={, },separate-uncertainty,range-phrase={\ensuremath{\sim}}}
+
 \renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
 % 使整篇文章的首段都有缩进
 \let\@afterindentfalse\@afterindenttrue\@afterindenttrue
